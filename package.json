@@ -1,0 +1,19 @@
+{
+  "name": "budget-management-system",
+  "version": "1.0.0",
+  "description": "Full-stack Budget Management System for school budget tracking",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "build:all": "cd backend && npm run build && cd ../frontend && npm run build",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "keywords": ["budget", "management", "school", "tracking"],
+  "author": "",
+  "license": "ISC"
+}

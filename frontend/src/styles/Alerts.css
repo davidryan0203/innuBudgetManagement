@@ -1,0 +1,147 @@
+.alerts-forecasts {
+  width: 100%;
+}
+
+.alerts-forecasts h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--dark-text);
+}
+
+.alerts-section,
+.forecasts-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.alerts-section h2,
+.forecasts-section h2 {
+  margin-bottom: 1.5rem;
+  color: var(--dark-text);
+  font-size: 1.5rem;
+}
+
+.alerts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.alert-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  background-color: #fafafa;
+  transition: all 0.3s;
+}
+
+.alert-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.alert-header h3 {
+  color: var(--dark-text);
+  margin: 0;
+}
+
+.severity-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.severity-critical {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.severity-high {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.severity-medium {
+  background-color: #fef08a;
+  color: #a16207;
+}
+
+.severity-low {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.alert-message {
+  color: var(--dark-text);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.alert-date {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.forecasts-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.alert-value {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.normal-value {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.trend-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--border-radius);
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.trend-increasing {
+  background-color: #fee2e2;
+  color: var(--danger);
+}
+
+.trend-decreasing {
+  background-color: #dcfce7;
+  color: var(--success);
+}
+
+.trend-stable {
+  background-color: #dbeafe;
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .alerts-list {
+    grid-template-columns: 1fr;
+  }
+
+  .alerts-forecasts h1 {
+    font-size: 2rem;
+  }
+
+  .forecasts-table {
+    font-size: 0.9rem;
+  }
+}

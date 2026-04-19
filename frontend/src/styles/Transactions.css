@@ -1,0 +1,33 @@
+.transaction-entry {
+  background-color: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.transaction-entry h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--dark-text);
+}
+
+.transaction-entry form {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-entry button[type="submit"] {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .transaction-entry {
+    padding: 1.5rem;
+  }
+
+  .transaction-entry h1 {
+    font-size: 1.5rem;
+  }
+}
