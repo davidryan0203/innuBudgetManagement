@@ -61,7 +61,7 @@ const AppContent = () => {
               }}
             />
             <div>
-              <p className="font-display text-lg tracking-wide text-brand-sand">Innu Budget Intelligence</p>
+              <p className="font-display text-lg tracking-wide text-brand-sand">Innu Education Budget Intelligence</p>
               <p className="text-xs uppercase tracking-[0.2em] text-brand-cream/80">Budget Management System</p>
             </div>
           </div>

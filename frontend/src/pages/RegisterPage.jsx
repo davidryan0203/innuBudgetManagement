@@ -63,7 +63,7 @@ export const RegisterPage = () => {
                 </div>
               )}
               <div>
-                <p className="font-display text-lg text-brand-navy">Innu Budget Intelligence</p>
+                <p className="font-display text-lg text-brand-navy">Innu Education Budget Intelligence</p>
                 <p className="text-xs uppercase tracking-[0.2em] text-brand-navy/65">Budget Management System</p>
               </div>
             </div>
